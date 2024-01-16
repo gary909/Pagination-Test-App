@@ -7,11 +7,11 @@ import './App.css';
 const App = () => {
   const [photos, setPhotos] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [photosPerPage] = useState(10); // Change this to display more or less items per page
+  const [photosPerPage] = useState(4); // Change this to display more or less items per page
 
   useEffect(() => {
     const fetchPhotos = async () => {
-      const response = await axios.get('https://jsonplaceholder.typicode.com/photos?_limit=100'); // Fetching only 10 photos for example
+      const response = await axios.get('https://jsonplaceholder.typicode.com/photos?_limit=30'); // Fetching only 10 photos for example
       setPhotos(response.data);
     };
 
@@ -28,7 +28,7 @@ const App = () => {
 
   return (
     <div className='app'>
-      <h1>Photo Gallery</h1>
+      <h1>Paginated Results</h1>
       <PhotoList photos={currentPhotos} />
       <Pagination
         itemsPerPage={photosPerPage}
