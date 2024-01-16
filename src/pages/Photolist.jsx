@@ -1,4 +1,6 @@
 import React from 'react';
+//import './App.css'; // Importing the CSS file
+
 
 // This is the PhotoList component
 const PhotoList = ({ photos }) => {

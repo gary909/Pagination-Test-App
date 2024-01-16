@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import PhotoList from './pages/Photolist';
+//import './App.css'; // Importing the CSS file
+import './App.css';
 
 const App = () => {
   const [photos, setPhotos] = useState([]);
