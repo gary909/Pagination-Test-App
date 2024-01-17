@@ -27,6 +27,9 @@ const Pagination = ({ itemsPerPage, totalItems, paginate, currentPage }) => {
           </a>
         </li>
       </ul>
+      <div className="total-pages">
+        Total {totalItems} results
+      </div>
     </nav>
   );
 };

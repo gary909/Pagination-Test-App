@@ -8,3 +8,7 @@ Dummy server from: https://jsonplaceholder.typicode.com/photos
 Added forward/backward arrows, with first/last page disabled
 
 ![App image2](./src/paginatedArrows.png)
+
+Added result total
+
+![App image2](./src/paginatedTotal.png)

@@ -74,3 +74,9 @@ h1 {
   color: #ccc;
   cursor: not-allowed;
 }
+
+.total-pages {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #666;
+}
