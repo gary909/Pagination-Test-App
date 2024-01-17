@@ -69,3 +69,8 @@ h1 {
 .page-link:hover {
   background-color: #ddd;
 }
+
+.page-item.disabled .page-link {
+  color: #ccc;
+  cursor: not-allowed;
+}
